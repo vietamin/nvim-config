@@ -4,7 +4,7 @@ return {
     -- pull a specific version of the plugin
     tag = '0.1.6',
     dependencies = {
-        -- general purpose pluginn used to build user interfaces in neovim plugins
+        -- general purpose plugin used to build user interfaces in neovim plugins
         'nvim-lua/plenary.nvim'
     },
     config = function()
@@ -15,7 +15,7 @@ return {
         vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "[F]ind [F]iles" })
         -- set a vim motion to <Space> + f + g to search for files based on the text inside of them
         vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "[F]ind by [G]rep" })
-        -- set a vim motion to <Space> + f + d to search for Code Diagnostics in the current prject
+        -- set a vim motion to <Space> + f + d to search for Code Diagnostics in the current project
         vim.keymap.set('n', '<leader>fd', builtin.diagnostics, { desc = "[F]ind [D]iagnostics" })
         -- set a vim motion to <Space> + f + r to resume the previous search
         vim.keymap.set('n', '<leader>fr', builtin.resume, { desc = "[F]inder [R]esume" })
