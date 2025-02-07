@@ -1,5 +1,9 @@
 print("neovim started, you got this!")
 
+-- Load the options from the config/options.lua file
+require("config.options")
+require("config.keymaps")
+
 ---- LAZY Plugin Manager Configuration START
 -- Declare the path where lazy will clone plugin code
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -39,7 +43,4 @@ require("lazy").setup("plugins", opts)
 
 --- LAZY Plugin Manager Configuration END
 
--- Load the options from the config/options.lua file
-require("config.options")
-require("config.keymaps")
 
