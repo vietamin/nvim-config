@@ -33,7 +33,7 @@ local opts = {
 -- Load the options from the config/options.lua file
 require("config.options")
 require("config.keymaps")
-
+require("config.autocmds")
 --- Setup lazy, this should always be last
 -- Tell lazy that all plugin specs are found in the plugins directory
 -- Pass it the options we specified above

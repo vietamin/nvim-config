@@ -77,7 +77,7 @@ local function setup_jdtls()
 
     -- Determine the root directory of the project by looking for these specific markers
     local root_dir = jdtls.setup.find_root({ '.git', 'mvnw', 'gradlew', 'pom.xml', 'build.gradle' });
-    
+
     -- Tell our JDTLS language features it is capable of
     local capabilities = {
         workspace = {
